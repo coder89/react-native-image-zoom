@@ -1,5 +1,5 @@
 {
-  "name": "react-native-image-pan-zoom",
+  "name": "@glimpsar/react-native-image-pan-zoom",
   "version": "2.1.12",
   "description": "react native image pan zoom",
   "main": "built/index.js",
@@ -14,6 +14,9 @@
     "type": "git",
     "url": "https://github.com/ascoders/react-native-image-zoom.git"
   },
+  "publishConfig": {
+    "registry": "https://pkgs.dev.azure.com/spas/Vieware/_packaging/Custom/npm/registry/"
+  },
   "keywords": [
     "image-zoom"
   ],
@@ -24,18 +27,19 @@
     "react-native": "*"
   },
   "devDependencies": {
-    "@types/react": "^16.9.35",
-    "@types/react-native": "^0.62.7",
+    "@types/node": "^16.11.25",
+    "@types/react": "^18.0.0",
+    "@types/react-native": "^0.69.0",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
-    "eslint": "^7.0.0",
+    "eslint": "^6.0.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-native": "^3.8.1",
     "prettier": "^2.0.5",
-    "react": "^16.13.1",
-    "react-native": "^0.62.2",
-    "typescript": "^3.9.2"
+    "react": "18.0.0",
+    "react-native": "^0.69.4",
+    "typescript": "^4.8.4"
   }
 }

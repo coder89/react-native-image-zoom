@@ -3,7 +3,7 @@ import { Animated, LayoutChangeEvent, PanResponder, StyleSheet, View } from 'rea
 import styles from './image-zoom.style';
 import { ICenterOn, ImageZoomProps, ImageZoomState } from './image-zoom.type';
 
-export default class ImageViewer extends React.Component<ImageZoomProps, ImageZoomState> {
+export default class ImageViewer extends React.Component<React.PropsWithChildren<ImageZoomProps>, ImageZoomState> {
   public static defaultProps = new ImageZoomProps();
   public state = new ImageZoomState();
 
@@ -41,10 +41,10 @@ export default class ImageViewer extends React.Component<ImageZoomProps, ImageZo
   private centerDiffY = 0;
 
   // 触发单击的 timeout
-  private singleClickTimeout: number | undefined;
+  private singleClickTimeout: number | NodeJS.Timeout | undefined;
 
   // 计算长按的 timeout
-  private longPressTimeout: number | undefined;
+  private longPressTimeout: number | NodeJS.Timeout | undefined;
 
   // 上一次点击的时间
   private lastClickTime = 0;
